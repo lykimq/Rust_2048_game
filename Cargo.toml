@@ -1,8 +1,26 @@
 [package]
-name = "Rust_2048_game"
+name = "rust_2048_game"
 version = "0.1.0"
 edition = "2021"
+
+# Library configuration
+[lib]
+name = "rust_2048_game"
+path = "src/lib.rs"
+
+# Binary configuration
+[[bin]]
+name = "rust_2048_game"
+path = "src/main.rs"
+
+# Benchmark configuration
+[[bench]]
+name = "game_benchmarks"
+harness = false
 
 [dependencies]
 ggez = "0.9"
 rand = "0.8"
+
+[dev-dependencies]
+criterion = "0.5"
