@@ -45,12 +45,6 @@ To run the benchmarks, use the following command:
 cargo bench
 ```
 
-To run the benchmarks, use the following command:
-
-```bash
-cargo bench
-```
-
 ### Benchmark Results
 Our game's core operations have been benchmarked using Criterion.rs. The results are as follows:
 
